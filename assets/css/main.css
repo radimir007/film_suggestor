@@ -59,7 +59,7 @@ main {
 
 /* News section */
 .news {
-    margin-top: 3rem;
+    margin-top: 3vw;
 }
 
 .news h1 {
@@ -70,7 +70,7 @@ main {
 
 .news > article {
     padding: 2vw 4vw;
-    margin-top: 3rem;
+    margin-top: 3vw;
     display: flex;
     column-gap: 4vw;
 
@@ -96,7 +96,7 @@ main {
 }
 
 .news-film-description h2 {
-    margin: 0 0 3rem;
+    margin: 0 0 3vw;
     flex-basis: 100%;
 
     font-size: 1.7vw;
@@ -136,12 +136,12 @@ main {
 
 /* Slideshow section */
 .film-slideshow {
-    margin-top: 8rem;
+    margin-top: 8vw;
 }
 
 #film-ordering {
-    margin: 0 auto 2rem;
-    padding: .7rem 1rem;
+    margin: 0 auto 2vw;
+    padding: .7vw 1vw;
     display: block;
 
     font-weight: bold;
@@ -152,7 +152,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 4vw;
-    row-gap: 2rem;
+    row-gap: 2vw;
 }
 
 .film-holder article {
@@ -178,7 +178,7 @@ main {
 }
 
 .film-slideshow .more-films {
-    margin: 0 auto;
+    margin: 3vw auto 0;
     padding: .8vw 2vw;
     display: block;
 
@@ -187,7 +187,7 @@ main {
     border-radius: 10rem;
 
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1.4rem;
 
     transition: .2s ease;
     cursor: pointer;
@@ -247,4 +247,74 @@ footer .logo img {
 .social-icons a:hover {
     background: black;
     color: white;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1340px) {
+    .news h1 {
+        font-size: 3vw;
+    }
+
+    .news-film-description h2 {
+        font-size: 2.3vw;
+    }
+
+    .news-film-description p {
+        font-size: 1vw;
+        line-height: 2vw;
+    }
+
+    .film-holder {
+        row-gap: 5vw;
+    }
+
+    .film-holder article h3 {
+        font-size: 1.3vw;
+        line-height: 2vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --site-padding: 5vw;
+    }
+
+    .news h1 {
+        font-size: 3.5vw;
+    }
+
+    .news-film-description h2 {
+        font-size: 3vw;
+    }
+
+    .news-film-description p {
+        font-size: 1.4vw;
+        line-height: 2.7vw;
+    }
+
+    .main-form-button {
+        font-size: 2vw;
+    }
+
+    #film-ordering {
+        font-size: 1.5vw;
+        margin-bottom: 6vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .film-holder {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 6vw;
+    }
+
+    .film-holder article h3 {
+        font-size: 2vw;
+        line-height: 3.4vw;
+    }
+
+    .more-films {
+
+    }
 }
