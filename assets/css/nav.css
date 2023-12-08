@@ -1,0 +1,29 @@
+/* Navbar */
+nav {
+    padding: 2rem var(--site-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111;
+}
+
+nav .logo img {
+    max-width: 200px;
+}
+
+nav .login-btn {
+    padding: .6rem 1rem;
+    background: none;
+    border: 2px solid white;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+nav .login-btn:hover {
+    background: white;
+    color: black;
+}
