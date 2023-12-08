@@ -43,6 +43,13 @@ nav {
 
     color: inherit;
     text-decoration: none;
+
+    transition: .2s ease;
+}
+
+.login-btn:hover {
+    background: white;
+    color: black;
 }
 
 /** Main content **/
@@ -52,11 +59,11 @@ main {
 
 /* News section */
 .news {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .news h1 {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     text-align: center;
     text-decoration: underline;
 }
@@ -76,6 +83,7 @@ main {
 
 .news-film-picture img {
     max-width: 280px;
+
     border-radius: 1rem;
 }
 
@@ -87,13 +95,96 @@ main {
 }
 
 .news-film-description h2 {
-    font-size: 1.8vw;
-    flex-basis: 100%;
     margin: 0 0 3rem;
+    flex-basis: 100%;
+
+    font-size: 1.7vw;
 }
 
 .news-film-description p {
+    margin: 0;
+
     font-size: .9vw;
     line-height: 1.6vw;
-    margin: 0;
+}
+
+/* Main form button */
+.main-form-button {
+    margin: 3rem auto;
+    padding: 1rem 0;
+    display: block;
+    width: 70%;
+
+    background: white;
+    border: none;
+    border-radius: 3rem;
+
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.main-form-button:hover {
+    background: lightgrey;
+}
+
+/* Slideshow section */
+.film-slideshow {
+    margin-top: 8rem;
+}
+
+#film-ordering {
+    margin: 0 auto 2rem;
+    padding: .7rem 1rem;
+    display: block;
+
+    font-weight: bold;
+}
+
+.film-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 4vw;
+    row-gap: 2rem;
+}
+
+.film-holder article {
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.film-holder article:hover {
+    transform: scale(105%);
+}
+
+.film-holder article img {
+    width: 100%;
+    height: 80%;
+}
+
+.film-holder article h3 {
+    margin-top: .5vw;
+
+    line-height: 1.5vw;
+    text-align: center;
+}
+
+.film-slideshow .more-films {
+    margin: 0 auto;
+    padding: .7rem 2rem;
+    display: block;
+
+    border: none;
+    background: white;
+
+    font-weight: bold;
+}
+
+.film-slideshow .more-films i {
+    margin-left: .5rem;
 }
