@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Login - Filmathor</title>
+    <title>Register - Filmathor</title>
     <link href="assets/img/logo_favicon_black.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -27,21 +27,26 @@
 
             </aside>
             <aside class="login-form">
-                <h1>Prihlásiť sa</h1>
+                <h1>Zaregistrovať sa</h1>
                 <form action="" method="POST">
+                    <input type="text" name="username" id="username" required
+                           placeholder="Nickname">
                     <input type="email" name="user-email" id="user-email" required 
-                           placeholder="E-mailová adresa / Nickname">
-                    <input type="password" name="user-pass" id="user-pass" required 
+                           placeholder="E-mailová adresa">
+                    <input type="password" name="user-pass" id="user-pass" required
                            placeholder="Heslo">
+                    <input type="password" name="user-pass-repeat" id="user-pass-repeat" required
+                           placeholder="Heslo znovu">
 
                     <fieldset class="remember-field">
-                        <input type="checkbox" name="remember" id="remember-checkbox" checked>
-                        <label for="remember-checkbox">Zapamätať si ma</label>
+                        <input type="checkbox" name="terms-agreement" id="terms-agreement" required>
+                        <label for="terms-agreement">Súhlasím s používateľskými
+                            podmienkami</label>
                     </fieldset>
 
                     <div>
-                        <span>Nemáte účet? <a href="register.html">Registrovať sa</a></span>
-                        <input type="submit" value="Prihlásiť sa">
+                        <span>Už máte účet? <a href="login.html">Prihlásiť sa</a></span>
+                        <input type="submit" value="Registrovať sa">
                     </div>
 
                 </form>
